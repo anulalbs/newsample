@@ -70,3 +70,11 @@ projects:
       - webMethods Gateway
       - product
     lastUpdated: 1792580427229
+  DPNano_Product_MultiAPI:
+    id: wtrhadY0
+    description: Multi-API product with weather and storm APIs for DataPower Nano Gateway
+    tags:
+      - DataPower Nano Gateway
+      - multi-api
+      - product
+    lastUpdated: 1792581583098
