@@ -56,4 +56,11 @@ projects:
       - DataPower Nano Gateway
       - weather-api
       - authentication
-    lastUpdated: 1792580385944
+    lastUpdated: 1792580397272
+  wM_APIKey_Weather:
+    id: JRcVZx5V
+    description: APIKey protected weather API with invoke and a logging policy.
+    tags:
+      - webMethods Gateway
+      - apikey
+    lastUpdated: 1792580400789
