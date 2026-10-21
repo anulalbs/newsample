@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "7f8114bd-67fc-433c-9838-5f10985045ff:0",
+      "projectId": "REs4ePtm",
+      "filePath": "project1/project1_api/policies/telemetry-project1test_ps.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792569636525,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-project1test_ps",
+      "namespace": "project1",
+      "version": "1.0",
+      "contentHash": "813c5eb729238b20"
+    },
+    {
+      "id": "885d46b9-5d83-44a5-888e-1554217372d4:0",
+      "projectId": "REs4ePtm",
+      "filePath": "project1/project1_api/policies/project1test_ps.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792569637043,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "project1test_ps",
+      "namespace": "project1",
+      "version": "1.0",
+      "contentHash": "d07f22c3bf0c722c"
+    },
+    {
+      "id": "88d1b3c4-58d0-4e05-996e-331089fb41a3:0",
+      "projectId": "REs4ePtm",
+      "filePath": "project1/project1_api/policies/invoke-project1test_ps.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792569636002,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-project1test_ps",
+      "namespace": "project1",
+      "version": "1.0",
+      "contentHash": "06fcb991e3513186"
+    },
+    {
+      "id": "d129676c-4d62-41e1-acd3-171d8e04fb57:0",
+      "projectId": "REs4ePtm",
+      "filePath": "project1/project1_api/api/project1_api.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792569637599,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "project1_api",
+      "namespace": "project1",
+      "version": "1.0",
+      "contentHash": "9692085da87fe652"
+    },
+    {
+      "id": "ffd12335-6c6c-4c53-8b62-a52cec78cc3a:0",
+      "projectId": "REs4ePtm",
+      "filePath": "project1/project1_api/api/project1_api-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792569634363,
+      "schemaVersion": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "68f661b8-cbf2-448e-a66b-1b355cac0a29",
+      "projectId": "REs4ePtm",
+      "sourceNodeId": "885d46b9-5d83-44a5-888e-1554217372d4:0",
+      "targetNodeId": "88d1b3c4-58d0-4e05-996e-331089fb41a3:0",
+      "targetRefType": "same-project",
+      "targetRefString": "project1:invoke-project1test_ps:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792569637051,
+      "lastValidated": 1792569637051
+    },
+    {
+      "id": "81151a38-9132-4ae3-a130-849e43f35748",
+      "projectId": "REs4ePtm",
+      "sourceNodeId": "885d46b9-5d83-44a5-888e-1554217372d4:0",
+      "targetNodeId": "7f8114bd-67fc-433c-9838-5f10985045ff:0",
+      "targetRefType": "same-project",
+      "targetRefString": "project1:telemetry-project1test_ps:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792569637051,
+      "lastValidated": 1792569637051
+    },
+    {
+      "id": "9aca9859-6644-438c-8bb5-f6daf399dd01",
+      "projectId": "REs4ePtm",
+      "sourceNodeId": "d129676c-4d62-41e1-acd3-171d8e04fb57:0",
+      "targetNodeId": "ffd12335-6c6c-4c53-8b62-a52cec78cc3a:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./project1_api-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1792569635448,
+      "lastValidated": 1792569635448
+    },
+    {
+      "id": "b2a41a61-4f1b-465d-88b9-1ffa91cf8636",
+      "projectId": "REs4ePtm",
+      "sourceNodeId": "d129676c-4d62-41e1-acd3-171d8e04fb57:0",
+      "targetNodeId": "885d46b9-5d83-44a5-888e-1554217372d4:0",
+      "targetRefType": "same-project",
+      "targetRefString": "project1:project1test_ps:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792569637608,
+      "lastValidated": 1792569637608
+    }
+  ]
+}

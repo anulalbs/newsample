@@ -1,0 +1,21 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-project1test_ps
+  namespace: project1
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        persistentConnections: false
+        timeout: 30
+        url: '"" & $relativeUrl(''request'')'
+        decompressResponse: false
+        followRedirects: false
+        chunkedUpload: false
+        urlType: jsonata
