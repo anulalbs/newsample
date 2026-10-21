@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "39596cba-d18b-48f3-95e0-38a7bdb62b90:0",
+      "projectId": "RwMElvII",
+      "filePath": "test/testapi/policies/invoke-sample.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561967775,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-sample",
+      "namespace": "test",
+      "version": "1.0",
+      "contentHash": "05db7b1a499d9d54"
+    },
+    {
+      "id": "4ddd7972-11b0-4450-85d3-73bee9c947fb:0",
+      "projectId": "RwMElvII",
+      "filePath": "test/testapi/policies/telemetry-sample.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561968499,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-sample",
+      "namespace": "test",
+      "version": "1.0",
+      "contentHash": "4ede811fb6cf9cff"
+    },
+    {
+      "id": "4deb6609-52ce-4137-b91e-c7a53d93dbe5:0",
+      "projectId": "RwMElvII",
+      "filePath": "test/testapi/api/testapi.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561970044,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "testapi",
+      "namespace": "test",
+      "version": "1.0",
+      "contentHash": "7179dd67b6d44b79"
+    },
+    {
+      "id": "6f028540-bb9d-4742-8389-75f443defb42:0",
+      "projectId": "RwMElvII",
+      "filePath": "test/testapi/policies/sample.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561969211,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "sample",
+      "namespace": "test",
+      "version": "1.0",
+      "contentHash": "aafaa63041fbdf74"
+    },
+    {
+      "id": "efcfc120-12e5-43a5-a817-02b9467a2868:0",
+      "projectId": "RwMElvII",
+      "filePath": "test/testapi/api/testapi-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792561965510,
+      "schemaVersion": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "3c50b93e-aa69-40ac-ad9d-a84ffc9d63e5",
+      "projectId": "RwMElvII",
+      "sourceNodeId": "4deb6609-52ce-4137-b91e-c7a53d93dbe5:0",
+      "targetNodeId": "efcfc120-12e5-43a5-a817-02b9467a2868:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./testapi-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1792561966952,
+      "lastValidated": 1792561966952
+    },
+    {
+      "id": "56c2a2fc-b4c8-43b3-b45a-24c098aabdf6",
+      "projectId": "RwMElvII",
+      "sourceNodeId": "6f028540-bb9d-4742-8389-75f443defb42:0",
+      "targetNodeId": "39596cba-d18b-48f3-95e0-38a7bdb62b90:0",
+      "targetRefType": "same-project",
+      "targetRefString": "test:invoke-sample:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792561969214,
+      "lastValidated": 1792561969214
+    },
+    {
+      "id": "5f5fbc8a-58ec-47a4-a8cc-facd93a2afdb",
+      "projectId": "RwMElvII",
+      "sourceNodeId": "4deb6609-52ce-4137-b91e-c7a53d93dbe5:0",
+      "targetNodeId": "6f028540-bb9d-4742-8389-75f443defb42:0",
+      "targetRefType": "same-project",
+      "targetRefString": "test:sample:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792561970050,
+      "lastValidated": 1792561970050
+    },
+    {
+      "id": "f1b00749-fe8e-493b-809f-efb56c26061a",
+      "projectId": "RwMElvII",
+      "sourceNodeId": "6f028540-bb9d-4742-8389-75f443defb42:0",
+      "targetNodeId": "4ddd7972-11b0-4450-85d3-73bee9c947fb:0",
+      "targetRefType": "same-project",
+      "targetRefString": "test:telemetry-sample:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792561969214,
+      "lastValidated": 1792561969214
+    }
+  ]
+}
