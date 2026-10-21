@@ -40,4 +40,12 @@ projects:
       - DataPower Gateway v5
       - product
       - order-api
-    lastUpdated: 1792580361859
+    lastUpdated: 1792580368906
+  DPNano_Product_MultiAPI:
+    id: VDo4VyRA
+    description: Multi-API product with weather and storm APIs for DataPower Nano Gateway
+    tags:
+      - DataPower Nano Gateway
+      - multi-api
+      - product
+    lastUpdated: 1792580371848
