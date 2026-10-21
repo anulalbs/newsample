@@ -8,7 +8,7 @@ projects:
     id: REs4ePtm
     description: ''
     tags: []
-    lastUpdated: 1792570348994
+    lastUpdated: 1792580540601
   DPv6_Product_Calculator_Soap:
     id: GAwWCu6U
     description: >-
@@ -41,14 +41,6 @@ projects:
       - product
       - order-api
     lastUpdated: 1792580368906
-  DPNano_Product_MultiAPI:
-    id: VDo4VyRA
-    description: Multi-API product with weather and storm APIs for DataPower Nano Gateway
-    tags:
-      - DataPower Nano Gateway
-      - multi-api
-      - product
-    lastUpdated: 1792580382694
   DPNano_Product_Weather:
     id: qn7gGsp8
     description: Authenticated Weather API with Products and Plans having unlimited quota.
@@ -77,4 +69,4 @@ projects:
     tags:
       - webMethods Gateway
       - product
-    lastUpdated: 1792580419628
+    lastUpdated: 1792580427229
