@@ -32,4 +32,12 @@ projects:
     tags:
       - DataPower API Gateway
       - quota-limiting
-    lastUpdated: 1792580352456
+    lastUpdated: 1792580359028
+  DPv5c_Product_Order:
+    id: eSE3pg6H
+    description: Order API with Product and Plan configuration having quota limitations.
+    tags:
+      - DataPower Gateway v5
+      - product
+      - order-api
+    lastUpdated: 1792580361859
