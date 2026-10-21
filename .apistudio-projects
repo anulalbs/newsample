@@ -63,4 +63,11 @@ projects:
     tags:
       - webMethods Gateway
       - apikey
-    lastUpdated: 1792580400789
+    lastUpdated: 1792580407498
+  wM_NoAuth_Weather:
+    id: 60ClJhE5
+    description: 'Unauthenticated weather API with invoke and a logging policy. '
+    tags:
+      - webMethods Gateway
+      - no-auth
+    lastUpdated: 1792580410314
