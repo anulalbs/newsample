@@ -25,4 +25,11 @@ projects:
       - DataPower API Gateway
       - multi-api
       - product
-    lastUpdated: 1792580342247
+    lastUpdated: 1792580349486
+  DPv6_Product_Weather:
+    id: O7sS0efx
+    description: Weather API with Product and Plans having quota limitations.
+    tags:
+      - DataPower API Gateway
+      - quota-limiting
+    lastUpdated: 1792580352456
