@@ -1,0 +1,15 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: petstore-gateway
+  namespace: project1
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: project1:invoke-petstore-gateway:1.0
+  monitoring:
+    $ref: project1:telemetry-petstore-gateway:1.0

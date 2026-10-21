@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "13ba09f3-211f-4840-92aa-d3894ee0ae96:0",
+      "projectId": "0umY5rlI",
+      "filePath": "project1/Swagger_Petstore_-_OpenAPI_3_0/api/Swagger_Petstore_-_OpenAPI_3_0.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561820352,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "Swagger_Petstore_-_OpenAPI_3_0",
+      "namespace": "project1",
+      "version": "1.0.27",
+      "contentHash": "250dcc31acc3b9d4"
+    },
+    {
+      "id": "1b7671d0-bf6b-4909-b9bb-041ec91481ee:0",
+      "projectId": "0umY5rlI",
+      "filePath": "project1/Swagger_Petstore_-_OpenAPI_3_0/policies/invoke-petstore-gateway.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561817962,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-petstore-gateway",
+      "namespace": "project1",
+      "version": "1.0",
+      "contentHash": "07a02a93051be4cb"
+    },
+    {
+      "id": "47b2e7c9-05d4-45f8-b849-30639ae2ff90:0",
+      "projectId": "0umY5rlI",
+      "filePath": "project1/Swagger_Petstore_-_OpenAPI_3_0/policies/petstore-gateway.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561819460,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "petstore-gateway",
+      "namespace": "project1",
+      "version": "1.0",
+      "contentHash": "4bc8e7e6803ecc7a"
+    },
+    {
+      "id": "d4247a74-2a44-44b1-925d-bdc6a5e83134:0",
+      "projectId": "0umY5rlI",
+      "filePath": "project1/Swagger_Petstore_-_OpenAPI_3_0/api/swagger_petstore_-_openapi_3_0-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792561815613,
+      "schemaVersion": 1
+    },
+    {
+      "id": "fb966543-d13b-4d1c-bc59-7d646b2fa23e:0",
+      "projectId": "0umY5rlI",
+      "filePath": "project1/Swagger_Petstore_-_OpenAPI_3_0/policies/telemetry-petstore-gateway.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792561818735,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-petstore-gateway",
+      "namespace": "project1",
+      "version": "1.0",
+      "contentHash": "8086223320162057"
+    }
+  ],
+  "edges": [
+    {
+      "id": "1664942e-82e7-4ab1-9e99-1e1b0c91cea9",
+      "projectId": "0umY5rlI",
+      "sourceNodeId": "13ba09f3-211f-4840-92aa-d3894ee0ae96:0",
+      "targetNodeId": "d4247a74-2a44-44b1-925d-bdc6a5e83134:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./swagger_petstore_-_openapi_3_0-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1792561817116,
+      "lastValidated": 1792561817116
+    },
+    {
+      "id": "4f20c140-c1f8-4fd0-89d6-7a635a32035f",
+      "projectId": "0umY5rlI",
+      "sourceNodeId": "47b2e7c9-05d4-45f8-b849-30639ae2ff90:0",
+      "targetNodeId": "1b7671d0-bf6b-4909-b9bb-041ec91481ee:0",
+      "targetRefType": "same-project",
+      "targetRefString": "project1:invoke-petstore-gateway:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792561819469,
+      "lastValidated": 1792561819469
+    },
+    {
+      "id": "a3b5d3b7-5a71-4e0e-93cb-20257590a95d",
+      "projectId": "0umY5rlI",
+      "sourceNodeId": "13ba09f3-211f-4840-92aa-d3894ee0ae96:0",
+      "targetNodeId": "47b2e7c9-05d4-45f8-b849-30639ae2ff90:0",
+      "targetRefType": "same-project",
+      "targetRefString": "project1:petstore-gateway:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792561820355,
+      "lastValidated": 1792561820355
+    },
+    {
+      "id": "c8f9a183-9b13-444e-91f2-dae9a4a689af",
+      "projectId": "0umY5rlI",
+      "sourceNodeId": "47b2e7c9-05d4-45f8-b849-30639ae2ff90:0",
+      "targetNodeId": "fb966543-d13b-4d1c-bc59-7d646b2fa23e:0",
+      "targetRefType": "same-project",
+      "targetRefString": "project1:telemetry-petstore-gateway:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792561819469,
+      "lastValidated": 1792561819469
+    }
+  ]
+}
