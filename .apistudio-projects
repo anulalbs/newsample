@@ -70,4 +70,11 @@ projects:
     tags:
       - webMethods Gateway
       - no-auth
-    lastUpdated: 1792580410314
+    lastUpdated: 1792580416496
+  wM_Product_Weather:
+    id: qYIZ16Yc
+    description: Weather API with Product and Plans having quota limitations.
+    tags:
+      - webMethods Gateway
+      - product
+    lastUpdated: 1792580419628
