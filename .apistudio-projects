@@ -9,3 +9,12 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1792570348994
+  DPv6_Product_Calculator_Soap:
+    id: GAwWCu6U
+    description: >-
+      SOAP-based calculator API exposed as REST API with Product and Plan
+      configuration.
+    tags:
+      - DataPower API Gateway
+      - soap-to-rest
+    lastUpdated: 1792580332960
